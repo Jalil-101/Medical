@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
 
+
 const Tab = createBottomTabNavigator();
 
 export default function Tabs() {
@@ -20,6 +21,9 @@ export default function Tabs() {
           component={Home}
           options={{
             headershown: false,
+            
+            
+            tabBarLabel: "Profile",
             tabBarIcon: ({ color, size }) => (
               <Foundation name="home" size={24} color="red" />
             ),
