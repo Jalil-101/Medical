@@ -43,7 +43,7 @@ const Info = () => {
             {/* Upper section of info card */}
           </View>
           {/* beneath faint border line */}
-          <View className="border-b-0.5 w-11/12 ml-4 border-gray-300 pt-3"></View>
+          <View className="border-b-0.5 w-11/12 ml-4 border-white pt-3"></View>
           <View className="pt-4">
             <View className="flex-row justify-around">
               <View className="flex-row items-center space-x-1">
