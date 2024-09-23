@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, View ,StyleSheet} from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { Foundation } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -7,6 +7,8 @@ import Home from "../screens/Home";
 import Schedule from "../screens/Schedule";
 import Profile from "../screens/Profile";
 import Message from "../screens/Message";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,10 +18,13 @@ export default function Tabs() {
       <Tab.Navigator
         screenOptions={{
           headerShown: false,
-          tabBarActiveTintColor: "#343423",
+
           tabBarLabelPosition: "beside-icon",
-          tabBarActiveBackgroundColor: "#",
-          tabBarStyle: { position: "blue" },
+          tabBarActiveBackgroundColor: "#CBEAFF",
+
+          tabBarLabelStyle: {
+            display: "none",
+          },
         }}
       >
         <Tab.Screen
@@ -27,13 +32,22 @@ export default function Tabs() {
           component={Home}
           options={{
             headershown: false,
-            tabBarActiveTintColor: "#343423",
-            tabBarLabelPosition: "beside-icon",
-            tabBarActiveBackgroundColor: "#343423",
-            tabBarStyle: { ...styles.tabContainer },
+            tabBarItemStyle: {
+              borderRadius: 10,
+              margin: 10,
+            },
 
-            tabBarIcon: ({ color, size, focused }) => (
-              <Foundation name="home" size={24} color="gray" />
+            tabBarStyle: {
+              alignItems: "center",
+              justifyContent: "space-around",
+              height: 60,
+              paddingHorizontal: 10,
+            },
+            tabBarLabel: "Home",
+            // tabBarLabelStyle: { display: "flex" },
+
+            tabBarIcon: ({ color, size }) => (
+              <Foundation name="home" size={24} color="#4894fe" />
             ),
           }}
         />
@@ -42,17 +56,23 @@ export default function Tabs() {
           component={Schedule}
           options={{
             headershown: false,
-            tabBarActiveTintColor: "#343423",
-            tabBarLabelPosition: "beside-icon",
-            tabBarActiveBackgroundColor: "#343423",
-          
-            
-
             tabBarLabel: "Schedule",
-              tabBarItemStyle:{}
+            tabBarItemStyle: {
+              alignItems: "center",
+              justifyContent: "space-evenly",
+              borderRadius: 10,
+              margin: 10,
+            },
+
+            tabBarStyle: {
+              alignItems: "center",
+              justifyContent: "space-around",
+              height: 60,
+            },
+            // tabBarLabelStyle: { display: "flex" },
 
             tabBarIcon: ({ color, size }) => (
-              <Foundation name="home" size={24} color="gray" />
+              <Ionicons name="calendar-outline" size={20} color="#4894fe" />
             ),
           }}
         />
@@ -62,14 +82,23 @@ export default function Tabs() {
           component={Message}
           options={{
             headershown: false,
-            tabBarActiveTintColor: "#343423",
-            tabBarLabelPosition: "beside-icon",
-            tabBarActiveBackgroundColor: "#343423",
-
+            tabBarItemStyle: {
+              borderRadius: 10,
+              margin: 10,
+            },
+            tabBarStyle: {
+              alignItems: "center",
+              justifyContent: "space-around",
+              height: 60,
+            },
             tabBarLabel: "Message",
 
             tabBarIcon: ({ color, size }) => (
-              <Foundation name="home" size={24} color="gray" />
+              <MaterialCommunityIcons
+                name="message-processing-outline"
+                size={24}
+                color="gray"
+              />
             ),
           }}
         />
@@ -79,14 +108,18 @@ export default function Tabs() {
           component={Profile}
           options={{
             headershown: false,
-            tabBarActiveTintColor: "#343423",
-            tabBarLabelPosition: "beside-icon",
-            tabBarActiveBackgroundColor: "#343423",
-
-            tabBarLabel: "Profile",
+            tabBarItemStyle: {
+              borderRadius: 10,
+              margin: 10,
+            },
+            tabBarStyle: {
+              alignItems: "center",
+              justifyContent: "space-around",
+              height: 60,
+            },
 
             tabBarIcon: ({ color, size }) => (
-              <Foundation name="home" size={24} color="gray" />
+              <Ionicons name="person-outline" size={24} color="gray" />
             ),
           }}
         />
@@ -103,10 +136,13 @@ const styles = StyleSheet.create({
     height: 70,
     backgroundColor: "#afafFB",
     borderRadius: 10,
-    elevation: 0,
+    elevation: 10,
     flexDirection: "row",
     justifyContent: "space-around",
     paddingHorizontal: 20,
     alignItems: "center",
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    borderLeftWidth: 0.2,
   },
 });
