@@ -24,9 +24,10 @@ const Home = () => {
         Keyboard.dismiss();
       }}
     >
-      <SafeAreaView className="bg-white ">
+    
         <ScrollView showsVerticalScrollIndicator={false} >
-          {/* start of profile and name section  */}
+        {/* start of profile and name section  */}
+        <View className="flex-1 bg-white">
           <View>
             <Head />
           </View>
@@ -52,9 +53,10 @@ const Home = () => {
           <View>
             <Info />
           </View>
-          {/* end of info  */}
+        {/* end of info  */}
+        </View>
         </ScrollView>
-      </SafeAreaView>
+      
     </TouchableWithoutFeedback>
   );
 };

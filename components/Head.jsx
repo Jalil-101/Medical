@@ -1,9 +1,10 @@
-import { View, Text ,Image } from 'react-native'
+import { View, Text ,Image ,SafeAreaView} from 'react-native'
 import React from 'react'
 
 const Head = () => {
   return (
     <View>
+        <SafeAreaView >
       {/* start of profile and name section  */}
       <View className="pt-2 flex-row justify-between">
         <View className="p-4">
@@ -21,6 +22,7 @@ const Head = () => {
           />
         </View>
       </View>
+      </SafeAreaView>
       {/* end of profile and name section  */}
     </View>
   );
