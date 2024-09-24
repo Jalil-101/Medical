@@ -8,7 +8,7 @@ const Schedule = () => {
   return (
     <View className=" h-screen flex-1">
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View className="bg-white">
+        <View className="bg-white pt-4">
           <Slider />
           <Chips />
         </View>

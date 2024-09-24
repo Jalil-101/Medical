@@ -10,15 +10,19 @@ const Info = () => {
     <View>
       {/* Upper section of info card */}
       <View className="p-4">
-        <View><Text className="text-lg font-semibold text-black pb-1">Near Doctor</Text></View>
-        <View className="border border-white h-40 w-fit rounded-2xl  bg-white">
+        <View>
+          <Text className="text-lg font-semibold text-black pb-1">
+            Near Doctor
+          </Text>
+        </View>
+        <View className="border border-gray-100 h-40 w-fit rounded-2xl  bg-white">
           <View>
             <View className="flex-row pt-2">
               <View className="flex-row p-2">
                 <Image
                   className="rounded-full"
                   source={{
-                    uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfiKQkZywGZq230A6Yc987kUA4gIdnmWldA&s",
+                    uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRripLcqGUKIBfgbtmux6U1UY9UkgezqzJzFw&s",
                   }}
                   height={60}
                   width={60}
@@ -59,16 +63,20 @@ const Info = () => {
           </View>
         </View>
       </View>
-         <View className="p-4">
-        <View><Text className="text-lg font-semibold text-black pb-1">Near Doctor</Text></View>
-        <View className="border border-white h-40 w-fit rounded-2xl  bg-white">
+      <View className="p-4">
+        <View>
+          <Text className="text-lg font-semibold text-black pb-1">
+            Near Doctor
+          </Text>
+        </View>
+        <View className="border border-gray-100 h-40 w-fit rounded-2xl  bg-white">
           <View>
             <View className="flex-row pt-2">
               <View className="flex-row p-2">
                 <Image
                   className="rounded-full"
                   source={{
-                    uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfiKQkZywGZq230A6Yc987kUA4gIdnmWldA&s",
+                    uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRripLcqGUKIBfgbtmux6U1UY9UkgezqzJzFw&s",
                   }}
                   height={60}
                   width={60}
@@ -110,7 +118,6 @@ const Info = () => {
         </View>
       </View>
     </View>
-
   );
 }
 

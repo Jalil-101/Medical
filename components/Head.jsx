@@ -3,8 +3,7 @@ import React from 'react'
 
 const Head = () => {
   return (
-    <View>
-        <SafeAreaView >
+    <View className="">
       {/* start of profile and name section  */}
       <View className="pt-2 flex-row justify-between">
         <View className="p-4">
@@ -15,14 +14,14 @@ const Head = () => {
           <Image
             className="rounded-full"
             source={{
-              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYEXCTpHrGU7l16NRQd-L-tenQieARwEioQ&s",
+              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITSGfJIJxPzTve5FMMZ5wMl-D9hbIPzLwvw&s",
             }}
             height={60}
             width={60}
           />
         </View>
       </View>
-      </SafeAreaView>
+
       {/* end of profile and name section  */}
     </View>
   );

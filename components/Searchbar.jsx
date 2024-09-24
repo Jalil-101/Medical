@@ -14,7 +14,7 @@ const Searchbar = () => {
     <View className="pb-4">
       <View>
         <TextInput
-          className=" border-2 py-2 m-4 px-12  border-white  bg-white rounded-lg text-lg"
+          className=" border-2 py-2 m-4 px-12  border-gray-100  bg-white rounded-lg text-lg"
           value={Text}
           placeholder=" Search doctor or health issue"
         />

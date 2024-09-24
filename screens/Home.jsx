@@ -24,11 +24,10 @@ const Home = () => {
         Keyboard.dismiss();
       }}
     >
-    
-        <ScrollView showsVerticalScrollIndicator={false} >
+      <ScrollView showsVerticalScrollIndicator={false}>
         {/* start of profile and name section  */}
-        <View className="flex-1 bg-white">
-          <View>
+        <View className=" bg-white pt-4">
+          <View className="pt-4">
             <Head />
           </View>
           {/* end of profile and name section */}
@@ -53,10 +52,9 @@ const Home = () => {
           <View>
             <Info />
           </View>
-        {/* end of info  */}
+          {/* end of info  */}
         </View>
-        </ScrollView>
-      
+      </ScrollView>
     </TouchableWithoutFeedback>
   );
 };

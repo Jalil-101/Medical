@@ -18,7 +18,7 @@ const Chips = () => {
                     <Image
                       className="rounded-full"
                       source={{
-                        uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfiKQkZywGZq230A6Yc987kUA4gIdnmWldA&s",
+                        uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRikyE-yMkca1lJ5wg_BIVY28RzhmoxKeMSOw&s",
                       }}
                       height={60}
                       width={60}
@@ -28,7 +28,6 @@ const Chips = () => {
                         Dr. Imran Syahir
                       </Text>
                       <Text className="text-base text-gray-400">
-                        {" "}+
                         Dental Specialist
                       </Text>
                     </View>
@@ -69,17 +68,16 @@ const Chips = () => {
                     <Image
                       className="rounded-full"
                       source={{
-                        uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfiKQkZywGZq230A6Yc987kUA4gIdnmWldA&s",
+                        uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOZNAA0l6H1rYwGvL1M2O_oLwtcoHbfeQfg&s",
                       }}
                       height={60}
                       width={60}
                     />
                     <View className="pl-2">
                       <Text className="text-lg font-semibold text-black pb-1">
-                        Dr. Imran Syahir
+                        Dr. Bessie Coleman
                       </Text>
                       <Text className="text-base text-gray-400">
-                        {" "}
                         Dental Specialist
                       </Text>
                     </View>
@@ -120,17 +118,16 @@ const Chips = () => {
                     <Image
                       className="rounded-full"
                       source={{
-                        uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfiKQkZywGZq230A6Yc987kUA4gIdnmWldA&s",
+                        uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThvcY408anigSVDPWvgVH-JQ_kYITwpZ1jNQ&s",
                       }}
                       height={60}
                       width={60}
                     />
                     <View className="pl-2">
                       <Text className="text-lg font-semibold text-black pb-1">
-                        Dr. Imran Syahir
+                        Dr. Babe Didrikson
                       </Text>
                       <Text className="text-base text-gray-400">
-                        {" "}
                         Dental Specialist
                       </Text>
                     </View>
